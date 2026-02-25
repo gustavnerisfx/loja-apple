@@ -10,4 +10,4 @@ Tecnologias Usadas
 
 Objetivo
 
-O projeto tem como objetivo o aprendizado, saber desenvolver e criar utilizando as tecnologias mencionadas, postar e documentar minha evolução no Github.
+O projeto tem como objetivo o aprendizado, saber desenvolver utilizando as tecnologias mencionadas, postar e documentar minha evolução no Github.
