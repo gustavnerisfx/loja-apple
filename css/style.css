@@ -49,20 +49,9 @@ body {
     margin-top: 3.3%;
 }
 
-.p1{
-    font-size: 230%;
-    font-weight: 700;   
-}
-
-.p15{
-    font-size: 180%;
-    font-weight: 600;
-    color: rgb(69, 69, 69);
-}
-
 .p2{
     font-size: 340%;
-    font-weight: 700;
+    font-weight: 600;
     margin-left: 9.7%;
     margin-top: 4%;
     margin-bottom: 2.5%;
@@ -105,4 +94,8 @@ body {
 .li-produtos li:hover {
     opacity: 0.6;
     transition: 1.6s;
+}
+
+.ms-5 {
+    margin-left: 5rem !important;
 }
