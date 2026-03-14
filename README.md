@@ -1,7 +1,9 @@
 # Site Apple.
 
 <p>Este projeto é um site que recria a Apple Store, emulando sua UI (User Interface) e UX (User Experience), com objetivo apenas de desenvolver meu conhecimento e praticar minhas habilidades no desenvolvimento web.
-Tecnologias Usadas</p>
+</p>
+
+## Tecnologias Usadas:
 
 1.	HTML5
 2.	CSS3
