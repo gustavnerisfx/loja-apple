@@ -5,9 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="img/logomaca.ico">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-alteracoes.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Apple Store</title>
     <style>
+
+        .subtitulo-loja {
+            margin-left: 8%;
+        }
+
+        .h-4 {
+            font-weight: 600;
+            margin-left: 0%;
+            margin-top: 2%;
+            margin-bottom: -1.5%;
+            margin-right: 1%;
+        }
+
+        .h-4-loja {
+            font-size: 30px;
+        }
+
+        .h-1 {
+            color: rgb(69, 69, 69);
+            margin-left: 8%;
+        }
+
+        .h-2-loja {
+            font-size: 100px;
+            font-weight: 600;
+            margin-left: 8%;
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        
+        body{
+        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+            }
+
+        .card{
+            
+            background:white;
+            border-radius:25px;
+            padding:30px;
+            text-align:center;
+            box-shadow:0 10px 30px rgba(0,0,0,0.08);
+            }
+
+        .tag{
+            color:#ff6a00;
+            font-weight:600;
+            font-size:10px;
+            }
+
+        .titulo{
+            font-size:32px;
+            font-weight:600;
+            margin:10px 0 20px;
+            }
+
+        .produto{
+            width:100%;
+            margin:20px 0;
+            }
+
+        .cores{
+            display:flex;
+            justify-content:center;
+            gap:10px;
+            margin:10px 0;
+            }
+
+        .cor{
+            width:12px;
+            height:12px;
+            border-radius:50%;
+            }
+
+        .preco{
+            margin-top:10px;
+            font-size:16px;
+            color:#555;
+            }
+
+        .botao{
+            margin-top:15px;
+            display:inline-block;
+            background:#0071e3;
+            color:white;
+            padding:10px 20px;
+            border-radius:20px;
+            text-decoration:none;
+            font-weight:500;
+            }
 
     </style>
 </head>
@@ -58,28 +148,253 @@
 
 
     <article>
-        <h1 class="p2 mt-4">Loja</h1>
 
-        <div class="container-my5">
-            <div class="row g-4">
+        <h1 class="h-1 mt-4">Loja</h1>
+        <h2 class="h-2 h-2-loja mt-4">Mac</h2>
+
+        <div class="d-flex subtitulo-loja">
+            <h4 class="h-4 h-4-loja">Todos os modelos.</h4>
+            <h4 class="h-4 h-4-loja" style="color: rgb(69, 69, 69);">Escolha o seu.</h4>
+        </div>
+
+        <div class="container my-5">
+            <div class="row g-4 ">
 
                 <div class="col-md-4 col-lg-3">
-                    <a href="" class="text-decoration-none">
-                        <div class="card shadow-sm h-100 product-card">
-                        <img src="" class="card-img-top" alt="Uniforme Luminosity">
-                        <div class="card-body text-center">
-                            <h6 class="card-title">Camiseta Short n' Sweet Tour Is So Nice Tee</h6>
-                            <p class="fw-bold">LEVE 3 PAGUE 2</p>
-                            <p class="fs-5 fw-bold text-dark">R$69,99
-                            <span class="text-muted text-decoration-line-through">R$89,99</span>
-                            </p>
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>MacBook Neo</h4></div>
+                        <img class="produto" src="img/mac-card-macbook-neo.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#E5E6E6"></div>
+                            <div class="cor" style="background:#E8D1D1"></div>
+                            <div class="cor" style="background:#DDDC8C"></div>
+                            <div class="cor" style="background:#66728A"></div>
                         </div>
+
+                        <div class="preco">
+                            A partir de R$ 7.299
                         </div>
-                    </a>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
                 </div>
 
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>MacBook Air</h4></div>
+                        <img class="produto" src="img/mac-card-macbook-air.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#C8D8E0"></div>
+                            <div class="cor" style="background:#333944"></div>
+                            <div class="cor" style="background:#F0E4D3"></div>
+                            <div class="cor" style="background:#E3E4E5"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 13.999
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>MacBook Pro</h4></div>
+                        <img class="produto" src="img/mac-card-macbookpro.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#333133"></div>
+                            <div class="cor" style="background:#E3E4E5"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 20.999
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>iMac</h4></div>
+                        <img class="produto" src="img/mac-card-imac.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#547EAE"></div>
+                            <div class="cor" style="background:#827EB2"></div>
+                            <div class="cor" style="background:#DE6680"></div>
+                            <div class="cor" style="background:#EDD14D"></div>
+                            <div class="cor" style="background:#479260"></div>
+                            <div class="cor" style="background:#E37152"></div>
+                            <div class="cor" style="background:#E3E4E5"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 15.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>Mac mini</h4></div>
+                        <img class="produto" src="img/mac-card-mac-mini.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#FFFFFF"></div>
+                            <div class="cor" style="background:#FFFFFF"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 7.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>Mac Studio</h4></div>
+                        <img class="produto" src="img/mac-card-mac-studio.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#FFFFFF"></div>
+                            <div class="cor" style="background:#FFFFFF"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 25.999
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
             </div>
         </div>
+
+        <h1 class="h-2 h-2-loja mt-4">iPad</h1>
+
+        <div class="container my-5">
+            <div class="row g-4 ">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>iPad Pro</h4></div>
+                        <img class="produto" src="img/ipad-card-40-pro.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#383638"></div>
+                            <div class="cor" style="background:#E5E6E6"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 12.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>iPad Air</h4></div>
+                        <img class="produto" src="img/ipad-card-40-air.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#706E73"></div>
+                            <div class="cor" style="background:#D9E6E7"></div>
+                            <div class="cor" style="background:#E3DEE9"></div>
+                            <div class="cor" style="background:#E6E2DA"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 7.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>iPad</h4></div>
+                        <img class="produto" src="img/ipad-card-40-ipad.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#6880A3"></div>
+                            <div class="cor" style="background:#DE6675"></div>
+                            <div class="cor" style="background:#F0D963"></div>
+                            <div class="cor" style="background:#E3E4E5"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 4.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>iPad Mini</h4></div>
+                        <img class="produto" src="img/ipad-card-40-ipad-mini.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#716F74"></div>
+                            <div class="cor" style="background:#DAE6E7"></div>
+                            <div class="cor" style="background:#E3DEE9"></div>
+                            <div class="cor" style="background:#E7E2DA"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 6.299
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="h-2 h-2-loja mt-4">iPhone</h1>
 
 
         
