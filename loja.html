@@ -10,6 +10,65 @@
     <title>Apple Store</title>
     <style>
 
+        article {
+            height: 4150px;
+        }
+
+        .botao {
+            background: #0071e3;
+            color: white;
+            padding: 10px 22px;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+
+        }
+
+        .botao:hover {
+            background: rgba(0,113,227,0.75); 
+
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            border: 1px solid rgba(229, 240, 255, 0.25);
+
+            box-shadow: 
+                0 8px 25px rgba(0, 132, 255, 0.2),
+                inset 0 1px 1px rgba(229, 240, 255, 0.25);
+
+            transform: scale(1.05);
+
+            
+        }
+
+        .botao::after{
+            content:"";
+            position:absolute;
+
+            top:0;
+            left:0;
+            width:100%;
+            height:50%;
+
+            background: linear-gradient(
+                rgba(255,255,255,0.4),
+                rgba(255,255,255,0)
+            );
+
+            border-radius:25px;
+            opacity:0.4;
+        }
+
+        .card {
+            transition: 0.5s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
         .h-1 {
             margin-bottom: 2%;
         }
@@ -42,10 +101,6 @@
             margin-top: 0%;
             margin-bottom: 0%;
         }
-        
-        body{
-        font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
-            }
 
         .card{
             
@@ -76,7 +131,7 @@
         .cores{
             display:flex;
             justify-content:center;
-            gap:10px;
+            gap: 7px;
             margin:10px 0;
             }
 
@@ -103,16 +158,19 @@
             font-weight:500;
             }
 
+        
+
     </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-md bg-body-tertiary">
-        <div class="container d-flex flex-column align-items-md-center align-items-start">
+        <div class="container d-flex flex-column align-items-md-center align-items-start ">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav flex-column flex-md-row">
+                <ul class="navbar-nav flex-column flex-md-row gap-lg-4">
                     <li>
                         <a class="navbar-brand " href="index.html">
                             <img src="img/applelogo.webp" alt="Logo" width="65px">
@@ -154,6 +212,34 @@
     <article>
 
         <h1 class="h-1 mt-4">Loja</h1>
+
+        <ul class="li-produtos">
+            <li>
+                <a href="pages/mac.html"><img class="img-b" src="img/store-card-13-mac-nav-202510.png" alt="Mac"></a>
+                <span>Mac</span>
+            </li>
+            <li>
+                <a href="pages/ipad.html"><img class="img-b" src="img/store-card-13-ipad-nav-202405.png" alt="iPad"></a>
+                <span>iPad</span>
+            </li>
+            <li>
+                <a href="pages/iphone.html"><img class="img-b" src="img/store-card-13-iphone-nav-202509.png" alt="iPhone"></a>
+                <span>iPhone</span>
+            </li>
+            <li>
+                <a href="pages/watch.html"><img class="img-b" src="img/store-card-13-watch-nav-202509_GEO_BR.png" alt="Apple Watch"></a>
+                <span>Watch</span>
+            </li>
+            <li>
+                <a href="pages/airpods.html"><img class="img-b" src="img/store-card-13-airpods-nav-202509.png" alt="AirPods"></a>
+                <span>AirPods</span>
+            </li>
+            <li>
+                <a href="pages/acessorios.html"><img class="img-b" src="img/store-card-13-accessories-nav-202509.png" alt="Acessórios"></a>
+                <span>Acessórios</span>
+            </li>
+        </ul>
+
         <h2 class="h-2 h-2-loja mt-4">Mac</h2>
 
         <div class="d-flex subtitulo-loja">
@@ -400,7 +486,7 @@
 
         <h1 class="h-2 h-2-loja mt-4">iPhone</h1>
 
-        <div class="container my-5">
+<div class="container my-5">
             <div class="row g-4">
 
                 <div class="col-md-4 col-lg-3">
@@ -411,8 +497,9 @@
                         <img class="produto" src="img/iphone-card-17pro.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#383638"></div>
-                            <div class="cor" style="background:#E5E6E6"></div>
+                            <div class="cor" style="background:#E5E5E5"></div>
+                            <div class="cor" style="background:#F77D36"></div>
+                            <div class="cor" style="background:#424E79"></div>
                         </div>
 
                         <div class="preco">
@@ -432,10 +519,10 @@
                         <img class="produto" src="img/iphone-card-17air.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#706E73"></div>
-                            <div class="cor" style="background:#D9E6E7"></div>
-                            <div class="cor" style="background:#E3DEE9"></div>
-                            <div class="cor" style="background:#E6E2DA"></div>
+                            <div class="cor" style="background:#E5F2FA"></div>
+                            <div class="cor" style="background:#FAF3E4"></div>
+                            <div class="cor" style="background:#FBFBFB"></div>
+                            <div class="cor" style="background:#0C0C0C"></div>
                         </div>
 
                         <div class="preco">
@@ -455,10 +542,11 @@
                         <img class="produto" src="img/iphone-card-17.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#6880A3"></div>
-                            <div class="cor" style="background:#DE6675"></div>
-                            <div class="cor" style="background:#F0D963"></div>
-                            <div class="cor" style="background:#E3E4E5"></div>
+                            <div class="cor" style="background:#E7D8F2"></div>
+                            <div class="cor" style="background:#B9C69B"></div>
+                            <div class="cor" style="background:#A5BBDC"></div>
+                            <div class="cor" style="background:#FCFCFC"></div>
+                            <div class="cor" style="background:#464849"></div>
                         </div>
 
                         <div class="preco">
@@ -478,10 +566,9 @@
                         <img class="produto" src="img/iphone-card-17e.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#716F74"></div>
-                            <div class="cor" style="background:#DAE6E7"></div>
-                            <div class="cor" style="background:#E3DEE9"></div>
-                            <div class="cor" style="background:#E7E2DA"></div>
+                            <div class="cor" style="background:#FCE7E6"></div>
+                            <div class="cor" style="background:#FAFAFA"></div>
+                            <div class="cor" style="background:#45494B"></div>
                         </div>
 
                         <div class="preco">
@@ -501,10 +588,11 @@
                         <img class="produto" src="img/iphone-card-16plus.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#716F74"></div>
-                            <div class="cor" style="background:#DAE6E7"></div>
-                            <div class="cor" style="background:#E3DEE9"></div>
-                            <div class="cor" style="background:#E7E2DA"></div>
+                            <div class="cor" style="background:#A1B3F7"></div>
+                            <div class="cor" style="background:#B3D5D3"></div>
+                            <div class="cor" style="background:#F3B3DC"></div>
+                            <div class="cor" style="background:#F9F9F9"></div>
+                            <div class="cor" style="background:#434748"></div>
                         </div>
 
                         <div class="preco">
@@ -525,14 +613,40 @@
                         <img class="produto" src="img/iphone-card-40-accessories.jpg">
 
                         <div class="cores">
-                            <div class="cor" style="background:#716F74"></div>
-                            <div class="cor" style="background:#DAE6E7"></div>
-                            <div class="cor" style="background:#E3DEE9"></div>
-                            <div class="cor" style="background:#E7E2DA"></div>
+                            <div class="cor" style="background:#FFFFFF"></div>
                         </div>
 
                         <div class="preco">
-                            A partir de R$ 6.299
+                            A partir de R$ 20
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="h-2 h-2-loja mt-4">Watch</h1>
+
+        <div class="container my-5">
+            <div class="row g-4">
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>Apple Watch Series 11</h4></div>
+                        <img class="produto" src="img/watch-card-40-s11-202509_GEO_BR.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#E5E5E5"></div>
+                            <div class="cor" style="background:#F77D36"></div>
+                            <div class="cor" style="background:#424E79"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 12.499
                         </div>
 
                         <a class="botao">Ver preços</a>
@@ -540,11 +654,135 @@
                     </div>
                 </div>
 
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>Apple Watch SE 3</h4></div>
+                        <img class="produto" src="img/watch-card-40-se-202603.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#E5F2FA"></div>
+                            <div class="cor" style="background:#FAF3E4"></div>
+                            <div class="cor" style="background:#FBFBFB"></div>
+                            <div class="cor" style="background:#0C0C0C"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 7.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-lg-3">
+                    <div class="card">
+
+                        <div class="tag text-start">NOVO</div>
+                        <div class="titulo text-start"><h4>Apple Watch Ultra 3</h4></div>
+                        <img class="produto" src="img/watch-card-40-ultra3-202509_GEO_BR.jpg">
+
+                        <div class="cores">
+                            <div class="cor" style="background:#E7D8F2"></div>
+                            <div class="cor" style="background:#B9C69B"></div>
+                            <div class="cor" style="background:#A5BBDC"></div>
+                            <div class="cor" style="background:#FCFCFC"></div>
+                            <div class="cor" style="background:#464849"></div>
+                        </div>
+
+                        <div class="preco">
+                            A partir de R$ 4.499
+                        </div>
+
+                        <a class="botao">Ver preços</a>
+
+                    </div>
+                </div>
+
+    </article>
+
+    <footer class="apple-footer mt-5 pt-5">
+
+        <div class="container">
+
+            <h1 class="mb-5">Links Úteis</h1>
+            <div class="row gx-custom">
+                
+                <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                <ol class="breadcrumb mb-4">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+                </nav>
+
+                <div class="col-6 col-md-2">
+                    <h2>Descobrir e Comprar</h2>
+                    <ul>
+                        <li><a href="loja.html">Loja</a></li>
+                        <li><a href="pages/mac.html">Mac</a></li>
+                        <li><a href="pages/ipad.html">iPad</a></li>
+                        <li><a href="pages/iphone.html">iPhone</a></li>
+                        <li><a href="pages/watch.html">Watch</a></li>
+                        <li><a href="pages/airpods.html">AirPods</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h2>Sua conta</h2>
+                    <ul>
+                        <li><a href="#">Gerencie sua Conta</a></li>
+                        <li><a href="#">iCloud.com</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h2>Apple Store</h2>
+                    <ul>
+                        <li><a href="#">Encontre uma loja</a></li>
+                        <li><a href="#">Today at Apple</a></li>
+                        <li><a href="#">Financiamento</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h2>Para Empresas</h2>
+                    <ul>
+                        <li><a href="#">Apple e os negócios</a></li>
+                        <li><a href="#">Comprar para empresa</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-2">
+                    <h2>Valores da Apple</h2>
+                    <ul>
+                        <li><a href="#">Privacidade</a></li>
+                        <li><a href="#">Meio ambiente</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-bottom mt-4 pt-3 mb-5">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-8">
+                            <p class="mb-2 mb-md-0">
+                                Copyright © 2026 Apple Inc. Todos os direitos reservados.
+                            </p>
+                        </div>
+
+                        <div class="col-md-4 text-md-end">
+                            <a href="#">Política de privacidade</a> |
+                            <a href="#">Avisos legais</a> |
+                            <a href="#">Brasil</a>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-
         
-    </article>
+    </footer>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/SmoothScroll.js"></script>
