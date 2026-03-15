@@ -1,6 +1,6 @@
 # Site Apple.
 
-<p>Este projeto é um site que recria a Apple Store, emulando sua UI (User Interface) e UX (User Experience), com objetivo apenas de desenvolver meu conhecimento e praticar minhas habilidades no desenvolvimento web.
+<p>Este projeto é um site que recria a Apple Store, emulando sua UI (User Interface) e UX (User Experience), com o objetivo de apenas desenvolver meu conhecimento e praticar minhas habilidades no desenvolvimento web.
 </p>
 
 ## Tecnologias Usadas:
